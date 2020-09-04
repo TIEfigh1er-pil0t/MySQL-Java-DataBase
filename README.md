@@ -1,3 +1,2 @@
 # MySQL-Java-DataBase
-simple database
-CRUD implemented
+Simple database connected with MySQL, CRUD implemented.
