@@ -14,7 +14,7 @@ public class UserDao extends User {
     private static final String FIND_ALL_USERS_QUERY = "SELECT * FROM workshop2.users";
 
     public String hashPassword(String password){
-        return org.mindrot.jbcrypt.BCrypt.hashpw(password, org.mindrot.jbcrypt.BCrypt.gensalt());
+        return BCrypt.hashpw(password, BCrypt.gensalt());
     }
 
     public User create(User user){
